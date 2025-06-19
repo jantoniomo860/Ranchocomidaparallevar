@@ -1109,28 +1109,48 @@ document.addEventListener('DOMContentLoaded', () => {
       showCategory('pizzas');
     });
   </script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-        loop: true, // Para que el carrusel sea infinito
-        autoplay: {
-            delay: 5000, // Cambia cada 5 segundos
-            disableOnInteraction: false, // Continúa el autoplay después de la interacción del usuario
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        // Aquí puedes añadir más opciones de Swiper para personalizarlo
-        // Por ejemplo, efectos de transición:
-        effect: "fade", // Otros efectos: "slide", "cube", "coverflow", "flip"
-        fadeEffect: {
-            crossFade: true,
-        },
-        speed: 1000, // Velocidad de la transición en ms
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true,
+            },
+            speed: 1000,
+        });
+
+        // Código para el menú móvil
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Script para la fecha de actualización del menú diario
+        const updateDateElement = document.getElementById('update-date');
+        if (updateDateElement) {
+            const today = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = today.toLocaleDateString('es-ES', options);
+            updateDateElement.textContent = `Actualizado: ${formattedDate}`;
+        }
     });
 </script>
 </body>
