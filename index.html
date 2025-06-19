@@ -143,20 +143,87 @@
 </nav>
 </header>
 <!-- Hero Section -->
-<section id="inicio" class="relative h-[500px] md:h-[600px] overflow-hidden" style="background-image: url('https://static.readdy.ai/image/e807f5ae4491ddd29d257a0cfd0abef5/ded3c05a99a5e0dca40f50ecb28361c4.png'); background-size: cover; background-position: center;">
-<div class="absolute inset-0 bg-black bg-opacity-50"></div>
-<div class="container mx-auto px-4 h-full flex items-center relative z-10">
-<div class="w-full md:w-1/2 text-white">
-<h2 class="text-4xl md:text-5xl font-bold mb-4">Auténtica Cocina Tradicional</h2>
-<p class="text-xl mb-6 font-satisfy">Desde 2006, cocinamos comida casera de verdad, hecha por nosotros cada día.</p>
-<a href="#menu" class="bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap inline-block">
-  Ver Menú Completo
-</a>
-</div>
-</div>
-<div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-<i class="ri-arrow-down-line text-2xl"></i>
-</div>
+<section id="inicio" class="relative h-[500px] md:h-[600px] overflow-hidden">
+    <div class="swiper mySwiper h-full">
+        <div class="swiper-wrapper h-full">
+
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-50" style="background-image: url('4.png'); background-size: cover; background-position: center;"></div>
+                <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+                    <div class="w-full md:w-1/2 text-white">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-4">Auténtica Cocina Tradicional</h2>
+                        <p class="text-xl mb-6 font-satisfy">Desde 2006, cocinamos comida casera de verdad, hecha por nosotros cada día.</p>
+                        <a href="#menu" class="bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap inline-block">
+                            Ver Menú Completo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('1.png');"></div>
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                 <div class="container mx-auto px-4 h-full flex items-center relative z-10 text-white">
+                    <div class="w-full text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">¡Platos Frescos Cada Día!</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('2.png');"></div>
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="container mx-auto px-4 h-full flex items-center relative z-10 text-white">
+                    <div class="w-full text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">Sabores Que Enamoran</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('3.png');"></div>
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="container mx-auto px-4 h-full flex items-center relative z-10 text-white">
+                    <div class="w-full text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">Tradición en Cada Bocado</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('4.png');"></div>
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="container mx-auto px-4 h-full flex items-center relative z-10 text-white">
+                    <div class="w-full text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">Calidad y Frescura</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('5.png');"></div>
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="container mx-auto px-4 h-full flex items-center relative z-10 text-white">
+                    <div class="w-full text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">Tu Mesa, Nuestra Pasión</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('6.png');"></div>
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="container mx-auto px-4 h-full flex items-center relative z-10 text-white">
+                    <div class="w-full text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">Hecho con Amor</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white animate-bounce z-20">
+        <i class="ri-arrow-down-line text-2xl"></i>
+    </div>
 </section>
 <!-- Platos del Día - Pizarra Digital -->
 <section id="diario" class="py-16 bg-[#F5F5DC]">
@@ -1042,5 +1109,29 @@ document.addEventListener('DOMContentLoaded', () => {
       showCategory('pizzas');
     });
   </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true, // Para que el carrusel sea infinito
+        autoplay: {
+            delay: 5000, // Cambia cada 5 segundos
+            disableOnInteraction: false, // Continúa el autoplay después de la interacción del usuario
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        // Aquí puedes añadir más opciones de Swiper para personalizarlo
+        // Por ejemplo, efectos de transición:
+        effect: "fade", // Otros efectos: "slide", "cube", "coverflow", "flip"
+        fadeEffect: {
+            crossFade: true,
+        },
+        speed: 1000, // Velocidad de la transición en ms
+    });
+</script>
 </body>
 </html>
